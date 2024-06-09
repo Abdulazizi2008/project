@@ -15,6 +15,28 @@ body {
   margin: 0 auto;
 }
 
+input {
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
+
+#login-button {
+  max-width: 191px;
+  width: 100%;
+  padding: 17px 62px;
+  margin-top: 26px;
+  margin-bottom: 65px;
+  border: none;
+  border-radius: 30px;
+  background-color: #454444;
+  color: white;
+  transition: 0.4s;
+  &:hover {
+    background-color: white;
+    color: #454444;
+    border: 1px solid #454444;
+  }
+}
 #app ul {
   list-style-type: none;
 }
@@ -305,6 +327,40 @@ nav {
       }
     }
   }
+}
+
+.product-container {
+  max-width: 500px;
+  margin: auto;
+}
+form {
+  display: block;
+}
+
+.form-control {
+  margin-bottom: 3rem;
+}
+
+.form__login {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+}
+
+label {
+  margin-bottom: 0.8rem;
+}
+
+.form-control input {
+  border: none;
+  border-bottom: 2px solid;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-bottom-color: blue;
 }
 @media (max-width: 480px) {
   .nav-items {
