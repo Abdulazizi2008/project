@@ -24,7 +24,7 @@ function getProductIdAndTitle() {
 }
 
 function renderProduct(product) {
-  const div = document.createElement("div");
+  const div = document.createElement("li");
 
   const img = document.createElement("img");
   img.src = product.image;
@@ -53,6 +53,10 @@ function renderProduct(product) {
   const price = document.createElement("strong");
   price.textContent = `$${product.price}`;
   div.append(price);
+
+  const button = document.createElement("button");
+  button.textContent = "Add to cart";
+  div.append(button);
 
   container.append(div);
 }
