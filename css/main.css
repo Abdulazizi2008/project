@@ -22,9 +22,9 @@ input {
 }
 
 #login-button {
-  max-width: 191px;
+  max-width: 559px;
   width: 100%;
-  padding: 17px 62px;
+  padding: 17px;
   margin-top: 26px;
   margin-bottom: 65px;
   border: none;
@@ -32,6 +32,8 @@ input {
   background-color: #454444;
   color: white;
   transition: 0.4s;
+  font-size: 24px;
+  font-weight: 700;
 }
 #login-button:hover {
   background-color: white;
@@ -385,11 +387,75 @@ label {
   border-bottom-color: blue;
 }
 
+.form-control input::-moz-placeholder {
+  color: #454444;
+}
+
+.form-control input::placeholder {
+  color: #454444;
+}
+
 .head-text {
+  padding-top: 61px;
   text-align: center;
   color: #454444;
   font-size: 64px;
   font-weight: 400;
+}
+
+.conte {
+  display: flex;
+  justify-content: end;
+}
+
+.fff {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 16px;
+  max-width: 141px;
+  width: 100%;
+}
+
+.line {
+  max-width: 283px;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.p1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #454444;
+}
+
+.wed {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.p2 {
+  display: flex;
+  gap: 53px;
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+.p2 p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #454444;
+}
+.p2 .rounds {
+  display: flex;
+  gap: 35px;
+}
+
+.kl {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
